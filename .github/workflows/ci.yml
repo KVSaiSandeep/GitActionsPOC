@@ -18,5 +18,4 @@ jobs:
       - run: npm ci
       - run: npm run prettier-check
       - run: npm test -- --coverage
-      - name: Deploy to Heroku
-        if: github.event_name == 'push'
+
