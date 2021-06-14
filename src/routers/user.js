@@ -60,9 +60,9 @@ router.get("/users/me", auth, async (req, res) => {
 });
 
 router.get("/users", auth, async (req, res) => {
-    const users = await User.find({})
-    res.status(200).send(users)
-  });
+  const users = await User.find({});
+  res.status(200).send(users);
+});
 
 router.patch("/users/me", auth, async (req, res) => {
   const updates = Object.keys(req.body);
